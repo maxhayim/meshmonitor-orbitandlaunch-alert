@@ -1,0 +1,7 @@
+# Orbit and Launch Alert v1.0.0
+# Required only for satellite / ISS pass predictions (launch alerts use the standard library).
+# python-sgp4 by Brandon Rhodes, MIT License: https://github.com/brandon-rhodes/python-sgp4
+sgp4>=2.20
+
+# Optional, Python 3.8 only: named time zones (OLA_TIMEZONE) without zoneinfo
+backports.zoneinfo; python_version < "3.9"
