@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Orbit and Launch Alert Logo</title>
+  <desc id="desc">A white rocket climbing away from Earth, crossing an orbit path with a satellite, on a blue rounded-square background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fb2ff"/>
+      <stop offset="0.45" stop-color="#4a86ea"/>
+      <stop offset="1" stop-color="#2556c4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.42" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfe2ff"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="tile"><rect x="16" y="16" width="992" height="992" rx="220"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#tile)">
+    <rect x="0" y="0" width="1024" height="1024" fill="url(#bg)"/>
+    <rect x="0" y="0" width="1024" height="1024" fill="url(#glow)"/>
+
+    <!-- stars -->
+    <g fill="#ffffff">
+      <circle cx="170" cy="190" r="9" opacity="0.9"/>
+      <circle cx="300" cy="120" r="6" opacity="0.7"/>
+      <circle cx="860" cy="430" r="7" opacity="0.8"/>
+      <circle cx="120" cy="420" r="5" opacity="0.6"/>
+      <circle cx="560" cy="110" r="5" opacity="0.6"/>
+    </g>
+
+    <!-- Earth limb -->
+    <circle cx="512" cy="1490" r="760" fill="url(#earth)" opacity="0.95"/>
+    <path d="M -40 760 Q 512 650 1064 760" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.5"/>
+
+    <!-- orbit path -->
+    <ellipse cx="512" cy="560" rx="430" ry="150" fill="none" stroke="#ffffff" stroke-width="22"
+             stroke-linecap="round" stroke-dasharray="2 48" transform="rotate(-18 512 560)" opacity="0.95"/>
+
+    <!-- satellite -->
+    <g transform="translate(800 300) rotate(-25)">
+      <rect x="-110" y="-34" width="80" height="68" rx="8" fill="#ffffff"/>
+      <rect x="30" y="-34" width="80" height="68" rx="8" fill="#ffffff"/>
+      <g stroke="#4a86ea" stroke-width="6">
+        <line x1="-83" y1="-34" x2="-83" y2="34"/><line x1="-57" y1="-34" x2="-57" y2="34"/>
+        <line x1="57" y1="-34" x2="57" y2="34"/><line x1="83" y1="-34" x2="83" y2="34"/>
+      </g>
+      <rect x="-30" y="-12" width="60" height="24" fill="#ffffff"/>
+      <rect x="-32" y="-44" width="64" height="88" rx="14" fill="#ffffff"/>
+      <circle cx="0" cy="0" r="16" fill="#4a86ea"/>
+      <line x1="0" y1="-44" x2="0" y2="-78" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="0" cy="-84" r="11" fill="#ffffff"/>
+    </g>
+
+    <!-- rocket with exhaust trail -->
+    <g transform="translate(400 520) rotate(28)">
+      <path d="M -26 150 Q 0 420 26 150 Z" fill="url(#flame)" opacity="0.85"/>
+      <path d="M 0 -230 C 70 -160 78 -40 70 110 L -70 110 C -78 -40 -70 -160 0 -230 Z" fill="#ffffff"/>
+      <circle cx="0" cy="-70" r="34" fill="#4a86ea"/>
+      <circle cx="0" cy="-70" r="20" fill="#9cc3ff"/>
+      <path d="M -70 30 L -128 120 L -128 160 L -70 120 Z" fill="#ffffff"/>
+      <path d="M 70 30 L 128 120 L 128 160 L 70 120 Z" fill="#ffffff"/>
+      <rect x="-40" y="110" width="80" height="34" rx="10" fill="#ffffff"/>
+      <path d="M -30 144 Q 0 250 30 144 Z" fill="#ffffff" opacity="0.95"/>
+    </g>
+  </g>
+</svg>
