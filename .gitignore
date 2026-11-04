@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Testing / coverage
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# Orbit and Launch Alert runtime data (cache, ledger, vendored sgp4)
+cache/
+ola_vendor/
+state.json
+
+# Local configuration (do NOT commit API keys)
+.env.local
+.env.*.local
+*.env
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Local security tooling state
+.prismor/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.orig
+
+# Tailscale / VPN configs (if stored locally)
+tailscale/
+wg0.conf
